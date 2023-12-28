@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA em Python</title>
+</head>
+<body>
+    <h1>Single Page Application em Python</h1>
+    <div id="app"></div>
+
+    <script>
+        // Exemplo simples de uma requisição à API usando JavaScript
+        fetch('/api/data')
+            .then(response => response.json())
+            .then(data => {
+                // Manipular os dados recebidos da API
+                console.log(data);
+            })
+            .catch(error => console.error('Erro na requisição:', error));
+    </script>
+</body>
+</html>
