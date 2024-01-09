@@ -1,0 +1,20 @@
+<!-- adicionar_tarefa.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Adicionar Tarefa</title>
+</head>
+
+<body>
+	<h1>Adicionar Tarefa</h1>
+	<form method="post" action="{% url 'adicionar_tarefa' %}">
+		{% csrf_token %}
+		<label for="descricao">Descrição:</label>
+		<input type="text" name="descricao" required>
+		<button type="submit">Adicionar</button>
+	</form>
+	<a href="{% url 'listar_tarefas' %}">Voltar para a Lista de Tarefas</a>
+</body>
+
+</html>
